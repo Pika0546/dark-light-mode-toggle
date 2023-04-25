@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/dark-light-mode-toggle/static/css/main.aea76ef8.css",
+    "main.js": "/dark-light-mode-toggle/static/js/main.43f08250.js",
+    "index.html": "/dark-light-mode-toggle/index.html",
+    "main.aea76ef8.css.map": "/dark-light-mode-toggle/static/css/main.aea76ef8.css.map",
+    "main.43f08250.js.map": "/dark-light-mode-toggle/static/js/main.43f08250.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aea76ef8.css",
+    "static/js/main.43f08250.js"
+  ]
+}
