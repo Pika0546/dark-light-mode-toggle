@@ -1,5 +1,6 @@
 import React, { useMemo } from "react";
 import styles from "./DarkmodeToggleButton.module.scss";
+import cloud from "../../assets/images/cloud.png"
 export const MODE = {
     DARK: "DARK",
     LIGHT: "LIGHT",
@@ -23,14 +24,14 @@ export const DarkmodeToggleButton = ({ onClick, mode }) => {
             {/* ============== CLOUD ============= */}
             <img
                 alt="a"
-                src="/images/cloud.png"
+                src={cloud}
                 className={`${styles["cloud"]} ${
                     mode === MODE.DARK ? styles["show"] : styles["hide"]
                 }`}
             />
             <img
                 alt="a"
-                src="/images/cloud.png"
+                src={cloud}
                 className={`${styles["cloud"]} ${styles["blur"]} ${
                     mode === MODE.DARK ? styles["show"] : styles["hide"]
                 }`}
