@@ -1,0 +1,264 @@
+.button{
+    width: 100px;
+    padding: 5px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    height: 40px;
+    overflow: hidden;
+    // &.light{
+    //     background: rgb(101,156,205);
+    //     background: linear-gradient(90deg, rgba(101,156,205,1) 0%, rgba(86,145,197,1) 50%, rgba(73,133,193,1) 75%, rgba(29,93,150,1) 100%);
+    // }
+    .bg{
+        position: absolute;
+       
+        border-radius: 100%;
+        transition: 1s;
+        &.light-1{
+            background-color: rgba(101,156,205,1);
+            width: 110px;
+            height: 110px;
+            top: -50%;
+            left: -50%;
+            z-index: 4;
+        }
+        &.light-2{
+            background-color:  rgba(86,145,197,1);
+            width: 130px;
+            height: 130px;
+            top: -50%;
+            left: -50%;
+            z-index: 3;
+
+        }
+        &.light-3{
+            background-color: rgba(73,133,193,1);
+            width: 160px;
+            height: 160px;
+            top: -50%;
+            left: -50%;
+            z-index: 2;
+
+        }
+        &.light-4{
+            background-color: rgba(29,93,150,1);
+            width: 200px;
+            height: 200px;
+            top: -50%;
+            left: -50%;
+            z-index: 1;
+        }
+
+        &.dark-1{
+            background-color: #52535E;
+            width: 110px;
+            height: 110px;
+            top: -50%;
+            right: -50%;
+            z-index: 4;
+        }
+        &.dark-2{
+            background-color:  #424350;
+            width: 130px;
+            height: 130px;
+            top: -50%;
+            right: -50%;
+            z-index: 3;
+
+        }
+        &.dark-3{
+            background-color: #2D313E;
+            width: 160px;
+            height: 160px;
+            top: -50%;
+            right: -50%;
+            z-index: 2;
+
+        }
+        &.dark-4{
+            background-color: #1C1F2C;
+            width: 200px;
+            height: 200px;
+            top: -50%;
+            right: -50%;
+            z-index: 1;
+        }
+    }
+    .slider{
+        display: block;
+       width: 30px;
+       height: 30px;
+       border-radius: 100%;
+       position: absolute;
+       top: 5px;
+       left: 5px;
+       z-index: 50;
+       transition: 1s;
+       box-shadow: 0px -1px 2px 0px rgba(0,0,0,0.51) inset, 
+        0px 1px 2px 0px rgba(255, 255, 255, 0.777) inset,
+        0px 0px 1px 0px rgba(0,0,0,0.51) ;
+      &.light{
+        background-color: #F9C123;
+        
+      }
+      &.dark{
+        background-color: #C7CBD5;
+        left: 65px;
+        &::after{
+            content: "";
+            display: block;
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background-color: #98A0B5;
+            top:5px;
+            left: 5px;
+            animation: show 1 1s;
+            border-radius: 100%; box-shadow: inset 0 0 1px 0px #000000c9;;
+
+        }
+        &::before{
+            content: "";
+            display: block;
+            position: absolute;
+            width: 7px;
+            height: 7px;
+            border-radius: 100%; box-shadow: inset 0 0 1px 0px #000000c9;;
+            background-color: #98A0B5;
+            right: 5px;
+            top: 15px;
+            animation: show 1 1s;
+        }
+      }
+    }
+    .inset-shadow{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        top: 0;
+        left: 0;
+        box-shadow: inset 0 0 4px 1px #000000c9;;
+        z-index: 15;
+    }
+
+    .cloud {
+        width: 110%;
+        height: auto;
+        display: block;
+        position: absolute;
+        top: 0;
+        z-index: 10;
+        opacity: 0.7;
+        &.blur{
+            opacity: 0.5;
+            top: -5px;
+            left: 0px;
+        }
+    }
+
+    .sprinkle{
+        background-color: #fff;
+        position: absolute;
+        z-index: 10;
+       &.star{
+            clip-path: polygon(50% 0, 65% 35%, 100% 50%, 65% 65%, 50% 100%, 35% 65%, 0 50%, 35% 35%);
+            &.lg{
+                width: 5px;
+                height: 5px;
+            }
+            &.md{
+                width: 3px;
+                height: 3px;
+            }
+            &.first{
+                top:7px;
+                left: 20px;
+            }
+            &.second{
+                top: 10px;
+                left: 60px;
+            }
+            &.third{
+                top: 25px;
+                left: 50px;
+            }
+       }
+       &.circle{
+            border-radius: 100%;
+            &.md{
+                width: 2px;
+                height: 2px;
+            }
+            &.sm{
+                width: 1px;
+                height: 1px;
+            }
+            &.first{
+                top: 20px;
+                left: 5px;
+            }
+            &.second{
+                top: 15px;
+                left: 15px;
+            }
+            &.third{
+                top: 25px;
+                left: 25px;
+            }
+
+            &.fourth{
+                top: 7px;
+                left: 50px;
+            }
+            &.fifth{
+                top: 10px;
+                left: 60px;
+            }
+            &.sixth{
+                top: 25px;
+                left: 50px;
+            }
+            &.seventh{
+                top: 20px;
+                left: 40px;
+            }
+       }
+    }
+}
+
+
+@keyframes show {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+@keyframes show2 {
+    0%{
+        opacity: 0;
+    }
+    
+}
+
+@keyframes hide {
+    100%{
+        opacity: 0%;
+    }
+}
+
+
+.hide{
+    animation: hide 1 1s forwards;
+}
+
+.show{
+    animation: show2 1 1s;
+}
